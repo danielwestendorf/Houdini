@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82B4AA2514F2EEE700EBE0CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B4AA2414F2EEE700EBE0CF /* Cocoa.framework */; };
+		82B4AA2714F2EEE700EBE0CF /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B4AA2614F2EEE700EBE0CF /* MacRuby.framework */; };
+		82B4AA3014F2EEE700EBE0CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA2E14F2EEE700EBE0CF /* InfoPlist.strings */; };
+		82B4AA3214F2EEE700EBE0CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B4AA3114F2EEE700EBE0CF /* main.m */; };
+		82B4AA3714F2EEE700EBE0CF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA3514F2EEE700EBE0CF /* MainMenu.xib */; };
+		82B4AA3A14F2EEE700EBE0CF /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA3914F2EEE700EBE0CF /* rb_main.rb */; };
+		82B4AA3C14F2EEE700EBE0CF /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */; };
+		82B4AA3F14F2EEE700EBE0CF /* Houdini.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82B4AA3D14F2EEE700EBE0CF /* Houdini.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82B4AA2914F2EEE700EBE0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B4AA1714F2EEE700EBE0CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B4AA1F14F2EEE700EBE0CF;
+			remoteInfo = Houdini;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82B4AA2014F2EEE700EBE0CF /* Houdini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houdini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B4AA2414F2EEE700EBE0CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		82B4AA2614F2EEE700EBE0CF /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		82B4AA2D14F2EEE700EBE0CF /* Houdini-Info.plist */ = {isa = PBXFileReference; path = "Houdini-Info.plist"; sourceTree = "<group>"; };
+		82B4AA2F14F2EEE700EBE0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82B4AA3114F2EEE700EBE0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82B4AA3314F2EEE700EBE0CF /* Houdini-Prefix.pch */ = {isa = PBXFileReference; path = "Houdini-Prefix.pch"; sourceTree = "<group>"; };
+		82B4AA3614F2EEE700EBE0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		82B4AA3914F2EEE700EBE0CF /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		82B4AA3E14F2EEE700EBE0CF /* Houdini.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Houdini.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82B4AA1D14F2EEE700EBE0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B4AA2514F2EEE700EBE0CF /* Cocoa.framework in Frameworks */,
+				82B4AA2714F2EEE700EBE0CF /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82B4AA1514F2EEE700EBE0CF = {
+			isa = PBXGroup;
+			children = (
+				82B4AA2B14F2EEE700EBE0CF /* Houdini */,
+				82B4AA2314F2EEE700EBE0CF /* Frameworks */,
+				82B4AA2114F2EEE700EBE0CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82B4AA2114F2EEE700EBE0CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA2014F2EEE700EBE0CF /* Houdini.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82B4AA2314F2EEE700EBE0CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA2414F2EEE700EBE0CF /* Cocoa.framework */,
+				82B4AA2614F2EEE700EBE0CF /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82B4AA2B14F2EEE700EBE0CF /* Houdini */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */,
+				82B4AA3D14F2EEE700EBE0CF /* Houdini.xcdatamodeld */,
+				82B4AA3414F2EEE700EBE0CF /* Resources */,
+				82B4AA3814F2EEE700EBE0CF /* Other Sources */,
+				82B4AA2C14F2EEE700EBE0CF /* Supporting Files */,
+			);
+			path = Houdini;
+			sourceTree = "<group>";
+		};
+		82B4AA2C14F2EEE700EBE0CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA2D14F2EEE700EBE0CF /* Houdini-Info.plist */,
+				82B4AA2E14F2EEE700EBE0CF /* InfoPlist.strings */,
+				82B4AA3114F2EEE700EBE0CF /* main.m */,
+				82B4AA3314F2EEE700EBE0CF /* Houdini-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82B4AA3414F2EEE700EBE0CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA3514F2EEE700EBE0CF /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		82B4AA3814F2EEE700EBE0CF /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				82B4AA3914F2EEE700EBE0CF /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		82B4AA2814F2EEE700EBE0CF /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 82B4AA4514F2EEE700EBE0CF /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				82B4AA2A14F2EEE700EBE0CF /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		82B4AA1F14F2EEE700EBE0CF /* Houdini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B4AA4214F2EEE700EBE0CF /* Build configuration list for PBXNativeTarget "Houdini" */;
+			buildPhases = (
+				82B4AA1C14F2EEE700EBE0CF /* Sources */,
+				82B4AA1D14F2EEE700EBE0CF /* Frameworks */,
+				82B4AA1E14F2EEE700EBE0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Houdini;
+			productName = Houdini;
+			productReference = 82B4AA2014F2EEE700EBE0CF /* Houdini.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82B4AA1714F2EEE700EBE0CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Scott USA";
+			};
+			buildConfigurationList = 82B4AA1A14F2EEE700EBE0CF /* Build configuration list for PBXProject "Houdini" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82B4AA1514F2EEE700EBE0CF;
+			productRefGroup = 82B4AA2114F2EEE700EBE0CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82B4AA1F14F2EEE700EBE0CF /* Houdini */,
+				82B4AA2814F2EEE700EBE0CF /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82B4AA1E14F2EEE700EBE0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B4AA3014F2EEE700EBE0CF /* InfoPlist.strings in Resources */,
+				82B4AA3714F2EEE700EBE0CF /* MainMenu.xib in Resources */,
+				82B4AA3A14F2EEE700EBE0CF /* rb_main.rb in Resources */,
+				82B4AA3C14F2EEE700EBE0CF /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82B4AA1C14F2EEE700EBE0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B4AA3214F2EEE700EBE0CF /* main.m in Sources */,
+				82B4AA3F14F2EEE700EBE0CF /* Houdini.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82B4AA2A14F2EEE700EBE0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82B4AA1F14F2EEE700EBE0CF /* Houdini */;
+			targetProxy = 82B4AA2914F2EEE700EBE0CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82B4AA2E14F2EEE700EBE0CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B4AA2F14F2EEE700EBE0CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82B4AA3514F2EEE700EBE0CF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B4AA3614F2EEE700EBE0CF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82B4AA4014F2EEE700EBE0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		82B4AA4114F2EEE700EBE0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		82B4AA4314F2EEE700EBE0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Houdini/Houdini-Prefix.pch";
+				INFOPLIST_FILE = "Houdini/Houdini-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82B4AA4414F2EEE700EBE0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Houdini/Houdini-Prefix.pch";
+				INFOPLIST_FILE = "Houdini/Houdini-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82B4AA4614F2EEE700EBE0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		82B4AA4714F2EEE700EBE0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82B4AA1A14F2EEE700EBE0CF /* Build configuration list for PBXProject "Houdini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B4AA4014F2EEE700EBE0CF /* Debug */,
+				82B4AA4114F2EEE700EBE0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B4AA4214F2EEE700EBE0CF /* Build configuration list for PBXNativeTarget "Houdini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B4AA4314F2EEE700EBE0CF /* Debug */,
+				82B4AA4414F2EEE700EBE0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82B4AA4514F2EEE700EBE0CF /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B4AA4614F2EEE700EBE0CF /* Debug */,
+				82B4AA4714F2EEE700EBE0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82B4AA3D14F2EEE700EBE0CF /* Houdini.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82B4AA3E14F2EEE700EBE0CF /* Houdini.xcdatamodel */,
+			);
+			currentVersion = 82B4AA3E14F2EEE700EBE0CF /* Houdini.xcdatamodel */;
+			path = Houdini.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82B4AA1714F2EEE700EBE0CF /* Project object */;
+}
