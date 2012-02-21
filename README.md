@@ -4,10 +4,10 @@ Launch your rdesktop sessions from the menubar in OSX.
 
 ![Alt Houdini](https://github.com/danielwestendorf/Houdini/raw/master/64.png)
 
-Features:
-* Add as many hosts as you want
-* Specify the username and domain
-* Full screen or custom dimensions
+Features:<br/>
+* Add as many hosts as you want<br/>
+* Specify the username and domain<br/>
+* Full screen or custom dimensions<br/>
 * Launch with any of the command line switches
 
 ## Setup
