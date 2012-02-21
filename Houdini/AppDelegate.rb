@@ -62,10 +62,10 @@ class AppDelegate
     #command = @settings.values.valueForKey('rdesktop_path')
     command = []
     command << "-f" if object.fullscreen == 1
-    command << "-g #{object.width}x#{object.height}" if object.fullscreen == 0
-    command << "-T #{object.host}"
-    command << "-u #{object.username}" if !object.username.nil? && !object.username.empty?
-    command << "-d #{object.domain}" if !object.domain.nil? && !object.domain.empty?
+    command << "-g#{object.width}x#{object.height}" if object.fullscreen == 0
+    command << "-T#{object.host}"
+    command << "-u#{object.username}" if !object.username.nil? && !object.username.empty?
+    command << "-d#{object.domain}" if !object.domain.nil? && !object.domain.empty?
     command << "#{object.switches}" if !object.switches.nil? && !object.switches.empty?
     command << "#{object.host}"
     p command
