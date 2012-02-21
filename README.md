@@ -5,16 +5,16 @@ Launch your rdesktop sessions from the menubar in OSX.
 ![Alt Houdini](https://github.com/danielwestendorf/Houdini/raw/master/64.png)
 
 Features:
-- Add as many hosts as you want
-- Specify the username and domain
-- Full screen or custom dimensions
-- Launch with any of the command line switches
+* Add as many hosts as you want
+* Specify the username and domain
+* Full screen or custom dimensions
+* Launch with any of the command line switches
 
 ## Setup
 Houdini requires that rdesktop is already installed. I suggest using homebrew for this.
 Find out about homebrew here: <a href="http://mxcl.github.com/homebrew/">Homebrew</a>
 
-  brew install rdesktop
+<code>brew install rdesktop</code>
 
 This installs the rdesktop executable to /usr/local/bin/rdesktop.
 
