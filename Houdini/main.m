@@ -3,7 +3,7 @@
 //  Houdini
 //
 //  Created by Daniel Westendorf on 2/20/12.
-//  Copyright (c) 2012 Scott USA. All rights reserved.
+//  Copyright (c) 2012 Daniel Westendorf. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

@@ -15,6 +15,8 @@
 		82B4AA3A14F2EEE700EBE0CF /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA3914F2EEE700EBE0CF /* rb_main.rb */; };
 		82B4AA3C14F2EEE700EBE0CF /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */; };
 		82B4AA3F14F2EEE700EBE0CF /* Houdini.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82B4AA3D14F2EEE700EBE0CF /* Houdini.xcdatamodeld */; };
+		82B4AA5014F3EFB400EBE0CF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA4F14F3EFB400EBE0CF /* menu.png */; };
+		82B4AA5214F3F0BA00EBE0CF /* Icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 82B4AA5114F3F0BA00EBE0CF /* Icons.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +33,17 @@
 		82B4AA2014F2EEE700EBE0CF /* Houdini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houdini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B4AA2414F2EEE700EBE0CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		82B4AA2614F2EEE700EBE0CF /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		82B4AA2D14F2EEE700EBE0CF /* Houdini-Info.plist */ = {isa = PBXFileReference; path = "Houdini-Info.plist"; sourceTree = "<group>"; };
+		82B4AA2D14F2EEE700EBE0CF /* Houdini-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Houdini-Info.plist"; sourceTree = "<group>"; };
 		82B4AA2F14F2EEE700EBE0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82B4AA3114F2EEE700EBE0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		82B4AA3314F2EEE700EBE0CF /* Houdini-Prefix.pch */ = {isa = PBXFileReference; path = "Houdini-Prefix.pch"; sourceTree = "<group>"; };
+		82B4AA3314F2EEE700EBE0CF /* Houdini-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Houdini-Prefix.pch"; sourceTree = "<group>"; };
 		82B4AA3614F2EEE700EBE0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		82B4AA3914F2EEE700EBE0CF /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		82B4AA3E14F2EEE700EBE0CF /* Houdini.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Houdini.xcdatamodel; sourceTree = "<group>"; };
+		82B4AA4F14F3EFB400EBE0CF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		82B4AA5114F3F0BA00EBE0CF /* Icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icons.icns; path = Houdini/Icons.icns; sourceTree = "<group>"; };
+		82B4AA5314F4037300EBE0CF /* Houdini.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Houdini.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +62,14 @@
 		82B4AA1514F2EEE700EBE0CF = {
 			isa = PBXGroup;
 			children = (
+				82B4AA5114F3F0BA00EBE0CF /* Icons.icns */,
 				82B4AA2B14F2EEE700EBE0CF /* Houdini */,
 				82B4AA2314F2EEE700EBE0CF /* Frameworks */,
 				82B4AA2114F2EEE700EBE0CF /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		82B4AA2114F2EEE700EBE0CF /* Products */ = {
 			isa = PBXGroup;
@@ -83,6 +91,8 @@
 		82B4AA2B14F2EEE700EBE0CF /* Houdini */ = {
 			isa = PBXGroup;
 			children = (
+				82B4AA5314F4037300EBE0CF /* Houdini.entitlements */,
+				82B4AA4F14F3EFB400EBE0CF /* menu.png */,
 				82B4AA3B14F2EEE700EBE0CF /* AppDelegate.rb */,
 				82B4AA3D14F2EEE700EBE0CF /* Houdini.xcdatamodeld */,
 				82B4AA3414F2EEE700EBE0CF /* Resources */,
@@ -124,11 +134,12 @@
 /* Begin PBXLegacyTarget section */
 		82B4AA2814F2EEE700EBE0CF /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "--compile --embed";
+			buildArgumentsString = "--compile --embed  --codesign \"3rd Party Mac Developer Application: Daniel Westendorf\"";
 			buildConfigurationList = 82B4AA4514F2EEE700EBE0CF /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
 			dependencies = (
 				82B4AA2A14F2EEE700EBE0CF /* PBXTargetDependency */,
 			);
@@ -163,7 +174,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Scott USA";
+				ORGANIZATIONNAME = "Daniel Westendorf";
 			};
 			buildConfigurationList = 82B4AA1A14F2EEE700EBE0CF /* Build configuration list for PBXProject "Houdini" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -192,6 +203,8 @@
 				82B4AA3714F2EEE700EBE0CF /* MainMenu.xib in Resources */,
 				82B4AA3A14F2EEE700EBE0CF /* rb_main.rb in Resources */,
 				82B4AA3C14F2EEE700EBE0CF /* AppDelegate.rb in Resources */,
+				82B4AA5014F3EFB400EBE0CF /* menu.png in Resources */,
+				82B4AA5214F3F0BA00EBE0CF /* Icons.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -303,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
