@@ -37,8 +37,8 @@ class AppDelegate
       server_item.setTitle(server.host)
       server_item.setAction("launch_rdp:")
       menu.addItem(server_item)
-      menu.addItem(NSMenuItem.separatorItem)
     end
+    menu.addItem(NSMenuItem.separatorItem) if @servers.length > 0
     
     preference_item = NSMenuItem.alloc
     preference_item.setTitle("Preferences...")
@@ -68,13 +68,35 @@ class AppDelegate
     command << "-d#{object.domain}" if !object.domain.nil? && !object.domain.empty?
     command << "#{object.switches}" if !object.switches.nil? && !object.switches.empty?
     command << "#{object.host}"
-    p command
-    NSTask.launchedTaskWithLaunchPath(@settings.values.valueForKey('rdesktop_path'), arguments: command)
+    task = NSTask.alloc.init
+    pipe = NSPipe.alloc.init
+    task.launchPath = @settings.values.valueForKey('rdesktop_path')
+    task.arguments = command
+    task.standardError = pipe
+    NSNotificationCenter.defaultCenter.addObserver(self, selector:'task_finished_with_error:', name:NSFileHandleReadCompletionNotification, object:pipe.fileHandleForReading)
+    pipe.fileHandleForReading.readInBackgroundAndNotify
+    task.launch
+  end
+  
+  def task_finished_with_error(notification)
+    data = notification.userInfo[NSFileHandleNotificationDataItem]
+    result = NSString.alloc.initWithData(data, encoding: NSUTF8StringEncoding)
+    NSLog "#{result}"
+    return unless result.scan(/Error/i).length > 0
+    alert = NSAlert.alloc.init
+    alert.addButtonWithTitle("Ok")
+    alert.setMessageText("#{result}")
+    alert.setInformativeText("There was a problem connecting to the host. Check your settings and try again.")
+    alert.setAlertStyle(NSCriticalAlertStyle)
+    alert.runModal
   end
   
   def fetch_servers
     request = NSFetchRequest.alloc.initWithEntityName('Server')
-    @servers = @managedObjectContext.executeFetchRequest(request, error:Pointer.new_with_type('@'))
+    servers = @managedObjectContext.executeFetchRequest(request, error:Pointer.new_with_type('@'))
+    @servers = []
+    servers.each {|server| @servers << server}
+    @servers.sort_by! {|s| s.username}
   end
   
   def quit(sender)

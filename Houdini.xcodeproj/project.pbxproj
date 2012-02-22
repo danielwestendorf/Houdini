@@ -362,6 +362,7 @@
 				82B4AA4414F2EEE700EBE0CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82B4AA4514F2EEE700EBE0CF /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +371,7 @@
 				82B4AA4714F2EEE700EBE0CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
