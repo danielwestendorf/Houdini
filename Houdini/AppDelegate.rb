@@ -96,7 +96,10 @@ class AppDelegate
     servers = @managedObjectContext.executeFetchRequest(request, error:Pointer.new_with_type('@'))
     @servers = []
     servers.each {|server| @servers << server}
-    @servers.sort_by! {|s| s.username}
+    begin
+      @servers.sort_by! {|s| s.host}
+    rescue
+    end
   end
   
   def quit(sender)
