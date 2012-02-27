@@ -20,10 +20,11 @@ This installs the rdesktop executable to /usr/local/bin/rdesktop.
 
 If you've already instlaled rdesktop to another location, you need to specify it in the preferences.
 
+[![endorse](http://api.coderwall.com/danielwestendorf/endorsecount.png)](http://coderwall.com/danielwestendorf)
 
 License
 ----------
-Copyright (c) 2011 Daniel Westendorf
+Copyright (c) 2012 Daniel Westendorf
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
